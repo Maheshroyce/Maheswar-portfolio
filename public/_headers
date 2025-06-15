@@ -1,8 +1,10 @@
-/*
+/* 
   Content-Type: text/html
 
 /assets/*
-  Content-Type: text/javascript
+  Content-Type: text/css
+  Cache-Control: public, max-age=31536000, immutable
 
 /dist/*
   Content-Type: text/javascript
+  Cache-Control: public, max-age=31536000, immutable

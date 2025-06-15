@@ -28,3 +28,8 @@ export default defineConfig(({ mode }) => ({
     },
   },
 }));
+viteStaticCopy({
+  targets: [
+    { src: "public/_headers", dest: "." }
+  ]
+})
