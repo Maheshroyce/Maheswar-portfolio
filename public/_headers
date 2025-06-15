@@ -1,2 +1,8 @@
+/*
+  Content-Type: text/html
+
 /assets/*
+  Content-Type: text/javascript
+
+/dist/*
   Content-Type: text/javascript
