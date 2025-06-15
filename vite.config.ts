@@ -16,20 +16,15 @@ export default defineConfig(({ mode }) => ({
     viteStaticCopy({
       targets: [
         {
-          src: "public/_headers", // your headers file
-          dest: "."               // copies into dist/
-        }
-      ]
-    })
-  ].filter(Boolean),
+          src: "public/_headers", // ✅ Copy _headers file
+          dest: ".",              // ✅ Places it directly into /dist
+        },
+      ],
+    }),
+  ].filter(Boolean), // removes any falsey plugins (e.g. if componentTagger is skipped)
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@": path.resolve(__dirname, "./src"), // ✅ Shortcut for imports
     },
   },
 }));
-viteStaticCopy({
-  targets: [
-    { src: "public/_headers", dest: "." }
-  ]
-})
